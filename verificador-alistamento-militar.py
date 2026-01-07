@@ -10,12 +10,12 @@ else:
     print ("você está na idade exata do alistamento militar")
 
 if idadeatual < 18:
-    saldomenor = int(datetime.now().year) + menordeidade
     menordeidade = 18 - idadeatual
+    saldomenor = int(datetime.now().year) + menordeidade
     print ("Faltam {} anos para você chegar na idade do alistamento, seu alistamento será em {}. ".format(menordeidade,saldomenor))
 elif idadeatual > 18:
-    saldomaior = int(datetime.now().year) - maiordeidade
     maiordeidade = idadeatual - 18
+    saldomaior = int(datetime.now().year) - maiordeidade
     print ("Faz {} anos que você deveria ter se alistado, no ano de {}. ".format(maiordeidade,saldomaior))
 else:
     print ("O processo deve ser feito este ano")
